@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+<header>
+  <h1>Lien et images</h1>
+
+  <a href="" id="wiki">La page principale de Wikipedia</a>
+ <br><br> <img src="../images/Logo_Google.png" class ="logoG"/>
+</header>
+
+<hr NOSHADE>
+
+<main>
+<h1>Des éléments !</h1>
+
+<form action="" method="POST" class="formulaire">
+    <input type="text" id="text" value="Premier pas avec Javascript"/><br><br>
+
+    <input type="radio" name="choix" value="1" id="c1">Choix N°1
+    <input type="radio" name="choix" value="2" id="c2">Choix N°2
+    <input type="radio" name="choix" value="3" id="c3">Choix N°3
+    <br><br>
+
+    <input type="password" value="password" id="pswrd"><br><br>
+
+    <input type="range" id="volume" name="volume" min="0" max="100"/>
+    <label for="volume">Volume </label><br>
+    <output id="value_volume">0</output><br>
+
+    <label for="checkbox1" >Une cas à cocher</label>
+    <input type="checkbox" id="checkbox1" name="checkbox1"/><br><br>
+
+    <label for="date1">Date :</label>
+    <input type="date" id="date1" name="date1"><br><br>
+
+    <input type="submit" id="submit" value="Ok">
+</form>
+
+</main>
+<hr noshade>
+<footer>
+<h1>Barres et progression</h1>
+    <label for="telechargement">Téléchargement en cours :</label>
+    <progress id="telechargement" value="50" max="100"></progress><br><br>
+
+    <label for="espace_dispo">Espace disponible :</label>
+    <meter id="espace_dispo" value="0.5"></meter>
+
+</footer>
+<hr noshade=>
+
+<script src="index3.js"></script>
+</body>
+</html>
