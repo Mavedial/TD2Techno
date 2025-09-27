@@ -2,3 +2,13 @@
     width: 25%;
     height: 30%;
 }
+main,footer,header{
+    display:none;
+}
+
+#menu{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 25%;
+    background-color: lightgray;
+}
