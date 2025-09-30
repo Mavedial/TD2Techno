@@ -110,3 +110,30 @@ if(CBM3.checked){footer.style.display="block";}else{footer.style.display="none";
 // car ayant réussit avec les if juste avant ce paragraphe j'ai voulu perfectionner en créant des liste.
 
 //----------------------------------------------------------------------------------------------------------------------
+
+const date = document.getElementById('date1');
+
+date.addEventListener('change', ()=>{
+    console.log(date.value);
+});
+
+//----------------------------------------------------------------------------------------------------------------------
+const telechargement = document.getElementById('telechargement');
+const espaceD = document.getElementById('espace_dispo');
+
+let temps =0;
+function updateTelechargement(){
+    temps+=5;
+    if (espaceD.value < espaceD.max && telechargement.value < telechargement.max) {
+        espaceD.value += 5
+        telechargement.value+=5;
+    }
+
+}
+window.addEventListener('DOMContentLoaded', ()=>{
+    telechargement.value=0;
+    espaceD.value=0;
+    if(espaceD.value!=100) {
+        setInterval(updateTelechargement, 1000);
+    }
+})
