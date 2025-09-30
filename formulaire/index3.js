@@ -133,7 +133,6 @@ function updateTelechargement(){
 window.addEventListener('DOMContentLoaded', ()=>{
     telechargement.value=0;
     espaceD.value=0;
-    if(espaceD.value!=100) {
         setInterval(updateTelechargement, 1000);
-    }
+
 })
